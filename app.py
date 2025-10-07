@@ -18,7 +18,7 @@ try:
         raise ValueError("API_KEY not found in .env file")
     
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')  # Using flash model for higher quotas
+    model = genai.GenerativeModel('gemini-2.5-flash')  # Using flash model for higher quotas
     print("✅ Gemini API configured successfully")
 except Exception as e: 
     print(f"❌ Configuration error: {e}")
